@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+    font-family: Arial, sans-serif; /* Добавляем приятный шрифт */
+    margin: 0;
+}   
+
+.photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover; /* Чтобы фото не сплющивалось */
+    display: block; /* Убираем нижний отступ у картинки */
+    margin-bottom: 15px; /* Отступ под фото */
+}
+
+.head {
+    display: flex; /* Используем flexbox для расположения левой и правой частей */
+    justify-content: space-between; /* Размещаем левую и правую части по краям */
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+    background-color: #fff5f5;
+    border: 2px solid #ffd6d6;
+    padding: 40px 20px 20px 40px; /* Добавляем отступы сверху и снизу */
+    border-radius: 10px;
+    width: 999px; /* Ширина карточки */
+    margin: 50px auto; /* Центрируем карточку на странице */
+}
+
+.card {
+    background: white; 
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-side-c {
+    width: 45%; /* Даём левой части достаточно места (было 20%, текст бы сплющивался) */
+    text-align: left; /* ГАРАНТИРОВАННОЕ выравнивание текста по левому краю */
+    padding-right: 30px; /* Добавляем отступ справа, чтобы текст не прилипал к правой части */
+}
+
+.right-side-c {
+    width: 45%; /* Правая часть также занимает 45% ширины */
+    text-align: left; /* Выравниваем текст по левому краю */
+}
+
+.only-link {
+    color: #003cff;
+    text-decoration: none; /* Убираем подчёркивание */
+    font-weight: bold; /* Делаем ссылку более заметной */
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+.only-link:hover {
+    color: #ff0000;
+    text-decoration: underline; /* Добавляем подчёркивание при наведении */
+}
+
+.photo-dyplom {
+    display: block;
+    margin-top: 10px;  
+    width: 85%;
+    max-width: 1000px; /* Ограничиваем максимальную ширину */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border: 3px solid #000000; /* Добавляем рамку */
+    border-radius: 10px; /* Скругляем углы */
+    margin-bottom: 10px;
+}
+
+
+.bottom{
+    display: flex;
+    justify-content: space-between;     /* Размещаем по краям */
+    align-items: center;    /* Выравниваем по центру вертикально */
+    padding: 10px;          /* Добавляем отступы */
+    border-radius: 10px;    /* Скругляем углы */
+    gap: 20px;              /* Добавляем промежуток между блоками */
+}
+
+.left-b{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Добавляем промежуток между абзацами */
+}
+
+.left-b p{
+    font-size: 16px; /* Размер шрифта */
+    line-height: 1.5; /* Межстрочный интервал */
+    color: #333;   /* Цвет текста */
+    margin: 5px 0; /* Отступы сверху и снизу */
+}
+
+.right-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Выравниваем по правому краю */    
+    align-items: center; /* Центрируем по горизонтали */
+    width: 50%;
+}
